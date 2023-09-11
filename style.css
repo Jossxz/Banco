@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(290deg,#FBEE4A,#FFE64B,#EBBA1E);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+    width: 80%;
+    height: 105px;
+    border-radius: 50px;
+    gap: 10px;
+    list-style: none;
+    border: linear-gradient(290deg,#889EBE,#889EBE);
+    background: linear-gradient(290deg,#889EBC,#3F87B2,#3268B2);
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 83px;
+    height: 83px;
+    border-radius: 50px;
+    padding: 15px;
+    background: #D9D9D9;
+    flex-wrap: nowrap;
+}
+a{
+    flex-wrap: nowrap;
+    text-decoration: none;
+    font-size: 15pt;
+    color: black;
+}img#PixImg{
+    display: flex;
+    width: 70%;
+}img#CreditImg{
+    display: flex;
+    width: 70%;
+}img#CardImg{
+    display: flex;
+    width: 70%;
+}img#OptionImg{
+    display: flex;
+    width: 70%;
+}
+div#form{   
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 15px;
+    border: #4279BA solid 3px;
+    width: 80%;
+    height: 584px;
+    border-radius: 45px;
+    background: linear-gradient(290deg,#5FA9AD,#3F75BB,#2E61B0);
+}
+div#BoxFirst{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 12px;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+}
+div#BoxValueMoney{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 238px;
+    height: 83px;
+    border-radius: 25px;
+    gap: 25px;
+    background-color: #D9D9D9;
+}div#BoxTextValue{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}h3#ValueMoney{
+    display: flex;
+}img#ocultImg{
+    display: flex;
+    width: 10%;
+    height: 40%;
+}
+div#Extract{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 137px;
+    height: 39px;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+}h3#TextExtract{
+    display: flex;
+
+}img#ExtractImg{
+    display: flex;
+    width: 20%;
+}
+div#BoxGrid{
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+}
+div#deposit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 120px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+}img#depositImg{
+    display: flex;
+    width: 50%;    
+}
+div#transfer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 120px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+}img#transferImg{
+    display: flex;
+    width: 50%;
+}
+div#withdraw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 120px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+}img#withdrawImg{
+    display: flex;
+    width: 50%;
+}
+div#PopUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    width: 30%;
+    height: 300px;
+    border-radius: 20px;
+    background-color: white;
+    gap: 20px;
+}h2#TitleBoxPop{
+    display: flex;
+}div#BoxPopUp{
+    display: flex;
+    width: 50%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: rgb(185, 185, 185);
+}div#TextPopUp{
+    display: flex;
+}
+h2#TitleBoxPop{
+    display: flex;
+}div#BoxPopUp{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: rgb(185, 185, 185);
+}div#BoxPopUp2{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: rgb(185, 185, 185);
+}
+h3#TextWelcome{
+    display: flex;
+    font-size: 15pt;
+}

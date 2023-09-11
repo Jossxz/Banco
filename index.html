@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mybank!</title>
+    <link rel="stylesheet" href="style.css">
+
+        <!--fica em amostra 5 icones,uma aceta que abre e informa mais icones-->
+        <header>
+            <li><a href="#">Pix</a><img src="image/Pix.png" id="PixImg"></li>
+            <li><a href="#">Credit</a><img src="image/Credit.png" id="CreditImg"></li>
+            <li><a href="#">Card</a><img src="image/Card.png" id="CardImg"></li>
+            <li><a href="#">Option</a><img src="image/Option.png" id="OptionImg"></li>
+        </header>
+</head>
+<body>
+            <div id="form">
+                <div id="BoxFirst">
+                    <h3 id="TextWelcome"></h3>
+                    <div id="BoxValueMoney">
+                        <div id="BoxTextValue">
+                            <h3 id="ValueMoney">R$ 1.999.999.99</h3>
+                        </div>
+                        <img src="image/ocultar.png" id="ocultImg">
+                    </div>
+                
+                            <!-- down-->
+                        <div id="Extract" onclick="extract()">
+                            <h3 id="TextExtract">Extract</h3><img src="image/Extract.png" id="ExtractImg">
+                            <div id="FormsValueExtract">
+                            </div>
+                        </div>
+                </div>
+                        <!-- Down-->
+                    <div id="BoxGrid">
+                        <div id="deposit" onclick="deposit()">
+                            <img src="image/Deposit.png" id="depositImg">
+                            <h3>Deposit</h3>
+                            <div id="MySafe">
+                                <div id="amount">
+                                    <div id="password">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- down-->
+                        <div id="transfer" onclick="transfer()">
+                            <img src="image/Transfer.png" id="transferImg">
+                            <h3>Transfer</h3>
+                            <div id="account">
+                                <div id="amount">
+                                    <div id="password">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- Down -->
+                    <div id="withdraw" onclick="withdraw()">
+                        <img src="image/Withdraw.png" id="withdrawImg">
+                        <h3>Withdraw</h3>
+                        <div id="amount">
+                            <div id="password">
+                            </div>
+                        </div> 
+                    </div>
+                    </div>
+                    <!-- Down -->
+                    <!-- 
+                <div id="PopUp">
+                    <h2 id="TitleBoxPop">User</h2>
+                    <div id="BoxPopUp">
+                        <h3 id="TextPopUp">id</h3>
+                    </div>
+                        <!-- down 
+                    <h2 id="TitleBoxPop2">aaa</h2>
+                    <div id="BoxPopUp2">
+                        <h3 id="TextPopUp2">R$</h3>
+                    </div>
+                -->
+        
+    </div>
+    <script src="index.js">
+    </script>
+</body>
+</html>
+<!-- centralizar todos os itens do forms e fazer o js. ver videos do funcionamento de Max-width e Min-width-->
