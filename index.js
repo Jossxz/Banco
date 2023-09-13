@@ -9,80 +9,71 @@
     // Função de extrato
     function extract(){
         alert("remédios:R$ 90 ,Ifood:R$ 80");
-        return byebye();
+        byebye();
     }
     // Função de Transfer
     function transfer(){
+        var dol = parseInt(999);
         var AccountT = parseInt(prompt("Informe números da conta: "));
         var TransferV = parseInt(prompt("informe um valor pra enviar"));
-        var pass = parseInt(prompt("Antes da operação, me informe a senha!"));
-        if(pass == password){
-            alert("Operação efetuada!")
-        }else if(pass !== password){
-            alert("Senha Incorreta!");
-            return again();
-        }
-        var dol = parseInt(1,999,999,99);
-        if(TransferV >= dol){
-            alert("Erro, não foi possivel efetuar a transferencia!");
-        }else if(TransferV < dol){
+        
+        passV();
+
+        if(TransferV <= dol){
             alert(`Operção executada com sucesso ${client}`);
-        }else if(TransferV <= 0){
-            alert("Erro, não foi possivel efetuar a transferencia!")
+        }else{
+            alert("Erro, Algo deu errado!");
+            return transfer();
         }
-        return byebye();
+        byebye();
     }
     // Função de saque
     function withdraw(){
-        var dol = parseInt(1.999,999,99);
-        var saque = prompt("Quantia que deseja sacar: ");
-        var pass = parseInt(prompt("Antes da operação, me informe a senha!"));
-        if(pass == password){
-            alert("Operação efetuada!")
-        }else if(pass !== password){
-            alert("Senha Incorreta!");
-            return again();
-        }
-        if(saque <= 0){
+        var dol = parseInt(999);
+        var saque = parseInt(prompt("Quantia que deseja sacar: "));
+
+        passV();
+
+        if(saque <= dol){
+            alert(`Operação executada com sucesso ${client}`);
+        }else{
             alert("Erro, Algo deu errado!");
-        }else if(saque < dol){
-            alert(`Operção executada com sucesso ${client}`);
+            return withdraw();
         }
-        if(saque > dol){
-            alert("Erro, Algo deu errado!");
-        }
-        return byebye();
+
+        byebye();
     }
     // Função de Deposito
     function deposit(){
-        var dol = parseint(1.999,999,99);
-        var deposit = prompt("Valor que deseja depositar: ")
-        var pass = parseInt(prompt("Antes da operação, me informe a senha!"));
-        if(pass == password){
-            alert("Operação efetuada!")
-        }else if(pass !== password){
-            alert("Senha Incorreta!");
-            return again();
-        }
-        if(deposit <= 0){
-            alert("Erro, Algo deu errado!")
-        }else if(deposit < dol){
+        var dol = parseInt(999);
+        var deposit = parseInt(prompt("Valor que deseja depositar: "));
+
+        passV();
+
+        if(deposit <= dol){
             alert(`Operção executada com sucesso ${client}`);
-        }
-        if(deposit > dol){
+        }else{
             alert("Erro, Algo deu errado!");
+            return deposit();
         }
-        return byebye();
+
+        byebye();
     }
 
     // Função tente novamente
-    function again(){
-        alert("Tente a senha novamente!")
-        return;
+    function passV(){
+        var pass = parseInt(prompt("Antes da operação, me informe a senha!"));
+        
+        if(pass == password){
+            alert("Senha Correta!")
+        }else if(pass !== password){
+            alert("Senha Incorreta!");
+            return passV();
+        }
     }
 
     // Função de nos veremos novamente! após se retirar do site o user deverá receber uma mensagem de goodbye
     function byebye(){
         alert(`${client} Foi um Prazer por te vêr aqui!`);
-    }
+    } 
    
